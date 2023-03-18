@@ -1,0 +1,52 @@
+{
+	"name": "layout",
+	"version": "0.1.0",
+	"description": "Gulp Build for Fast & Responsible layout",
+	"main": "gulpfile.js",
+	"type": "module",
+	"scripts": {
+		"development": "gulp development",
+		"build": "gulp build --build",
+		"font": "gulp font"
+	},
+	"keywords": [
+		"Gulp",
+		"HTML",
+		"SCSS",
+		"JavaScript",
+		"Image & Font compress",
+		"Task runner"
+	],
+	"author": {
+		"name": "mezathme",
+		"email": "mk@weareway.com"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"browser-sync": "^2.29.0",
+		"del": "^7.0.0",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^8.0.0",
+		"gulp-clean-css": "^4.3.0",
+		"gulp-fonter": "^0.3.0",
+		"gulp-group-css-media-queries": "^1.2.2",
+		"gulp-html-webp": "^1.0.1",
+		"gulp-if": "^3.0.0",
+		"gulp-imagemin": "^8.0.0",
+		"gulp-newer": "^1.4.0",
+		"gulp-notify": "^4.0.0",
+		"gulp-plumber": "^1.2.1",
+		"gulp-pug": "^5.0.0",
+		"gulp-rename": "^2.0.0",
+		"gulp-sass": "^5.1.0",
+		"gulp-ttf2woff2": "^4.0.1",
+		"gulp-version-number": "^0.2.4",
+		"gulp-webp": "^4.0.1",
+		"gulp-webpcss": "^1.1.1",
+		"sass": "^1.59.3",
+		"vinyl-named": "^1.1.0",
+		"webp-converter": "^2.2.3",
+		"webpack": "^5.76.2",
+		"webpack-stream": "^7.0.0"
+	}
+}
