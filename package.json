@@ -1,7 +1,7 @@
 {
 	"name": "layout",
 	"version": "0.1.0",
-	"description": "Gulp Build for Fast & Responsible layout",
+	"description": "Gulp Build for Fast & Adaptive layout",
 	"main": "gulpfile.js",
 	"type": "module",
 	"scripts": {
