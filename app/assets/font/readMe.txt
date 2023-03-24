@@ -1,0 +1,1 @@
+All font in font folder without subfolder
