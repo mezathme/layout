@@ -1,0 +1,55 @@
+.system-messages {
+	width: 100%;
+
+	display: grid;
+	align-items: flex-start;
+	justify-content: flex-end;
+	gap: 1.6rem;
+
+	margin: 0 0 3.2rem 0;
+}
+
+.system-message {
+	min-width: 24rem;
+	max-width: 50rem;
+	padding: 1.6rem;
+	border-radius: 1.6rem;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 1.6rem;
+
+	&--success {
+		background: $color-system-positive-background;
+	}
+
+	&--warning {
+		background: $color-system-warning-background;
+	}
+
+	&--error {
+		background: $color-system-negative-background;
+	}
+
+	& &__content {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		gap: 1.6rem;
+	}
+
+	&__close {
+		width: 2.4rem;
+		height: 2.4rem;
+		padding: 0.4rem;
+
+		-webkit-tap-highlight-color: transparent;
+		-webkit-appearance: none;
+
+		& > svg {
+			width: 1.6rem;
+			height: 1.6rem;
+		}
+	}
+}

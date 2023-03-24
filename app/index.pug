@@ -3,13 +3,21 @@ html(lang="en")
 	head
 		meta(charset="UTF-8")
 		meta(http-equiv="X-UA-Compatible", content="IE=edge")
-		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(name="viewport", content="width=device-width, user-scalable=no" )
+		meta(name='description' content='Crowdshopping')
 		link(rel="stylesheet", href="style/app.min.css")
-		title Document
-	body 
+		title Create new order
+	body 		
+		include component/loader.pug
 		.wrapper
-			include components/header.pug
-			main.main 1
-			include components/footer.pug	
+			include component/warning.pug
+			include component/header.pug
+			.content.container
+				include component/aside.pug
+				main.main
+					include component/system-message.pug
+					include page/new-order.pug
+			include component/aside-mobile.pug
+			
 		
 		script(src='./script/app.js')

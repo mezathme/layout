@@ -1,0 +1,121 @@
+.text {
+	color: $color-primary-dark-default;
+}
+
+.text--xlg {
+	font-size: 6.8rem;
+	font-weight: 700;
+	line-height: 140%;
+
+	@media (max-width: 1439px) {
+		font-size: calc((100vw - 59.9rem) / (143.9 - 59.9) * (6.8 - 4.8) + 4.8rem);
+	}
+
+	@media (max-width: 599px) {
+		font-size: 4.8rem;
+	}
+}
+
+.text--lg-1 {
+	font-size: 4rem;
+	font-weight: 700;
+	line-height: 160%;
+
+	@media (max-width: 1439px) {
+		font-size: calc((100vw - 59.9rem) / (143.9 - 59.9) * (4 - 3) + 3rem);
+	}
+
+	@media (max-width: 599px) {
+		font-size: 3rem;
+	}
+}
+
+.text--lg-2 {
+	font-size: 3rem;
+	font-weight: 700;
+	line-height: 160%;
+
+	@media (max-width: 1439px) {
+		font-size: calc((100vw - 59.9rem) / (143.9 - 59.9) * (3 - 2.8) + 2.8rem);
+	}
+
+	@media (max-width: 599px) {
+		font-size: 2.8rem;
+	}
+}
+
+.text--lg-3 {
+	font-size: 2.4rem;
+	font-weight: 700;
+	line-height: 160%;
+}
+
+.text--lg-4 {
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 160%;
+}
+
+.text--lg-5 {
+	font-size: 1.8rem;
+	font-weight: 700;
+	line-height: 160%;
+}
+
+.text--md-1 {
+	font-size: 1.8rem;
+	font-weight: 600;
+	line-height: 140%;
+
+	@media (max-width: 1439px) {
+		font-size: calc((100vw - 59.9rem) / (143.9 - 59.9) * (1.8 - 1.6) + 1.6rem);
+	}
+
+	@media (max-width: 599px) {
+		font-size: 1.6rem;
+		font-weight: 500;
+	}
+}
+
+.text--md-2 {
+	font-size: 1.6rem;
+	font-weight: 600;
+	line-height: 140%;
+
+	@media (max-width: 1439px) {
+		font-size: calc((100vw - 59.9rem) / (143.9 - 59.9) * (1.6 - 1.4) + 1.4rem);
+	}
+
+	@media (max-width: 599px) {
+		font-size: 1.4rem;
+		font-weight: 500;
+	}
+}
+
+.text--sm-1 {
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 130%;
+}
+
+.text--sm-2 {
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 130%;
+}
+
+.text--sm-3 {
+	font-weight: 500;
+}
+
+.text--xsm-1 {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 140%;
+}
+
+.text--xsm-2 {
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 140%;
+}

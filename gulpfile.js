@@ -40,24 +40,32 @@ console.log(app.gulp.series(convertOTF, convertTTF, fontStyle))
 
 const development = app.gulp.series(
 	app.task.clean,
-
-	app.gulp.parallel(
-		app.task.html,
-		app.task.style,
-		app.task.script,
-		app.task.image
+	app.gulp.series(
+		app.task.font.convertOTF,
+		app.task.font.convertTTF,
+		app.task.font.fontStyle,
+		app.gulp.parallel(
+			app.task.html,
+			app.task.style,
+			app.task.script,
+			app.task.image
+		)
 	),
 	app.gulp.parallel(app.task.watch, app.task.sync)
 )
 
 const build = app.gulp.series(
 	app.task.clean,
-
-	app.gulp.parallel(
-		app.task.html,
-		app.task.style,
-		app.task.script,
-		app.task.image
+	app.gulp.series(
+		app.task.font.convertOTF,
+		app.task.font.convertTTF,
+		app.task.font.fontStyle,
+		app.gulp.parallel(
+			app.task.html,
+			app.task.style,
+			app.task.script,
+			app.task.image
+		)
 	)
 )
 

@@ -1,0 +1,204 @@
+.popup {
+	position: absolute;
+	right: 0;
+	top: 4.45rem;
+
+	overflow: hidden;
+	overflow-y: scroll;
+
+	background: $background-primary-light-default;
+	box-shadow: 0px 10px 20px -4px rgba(111, 111, 111, 0.3);
+	border-radius: 0 0 0.8rem 0.8rem;
+
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+
+	&--profile {
+		padding: 0.8rem 0;
+		width: 22rem;
+
+		& > .popup__link {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			gap: 1rem;
+			position: relative;
+
+			-webkit-tap-highlight-color: transparent;
+			-webkit-appearance: none;
+
+			cursor: pointer;
+
+			padding: 0.8rem 1.2rem;
+
+			& > svg {
+				width: 2.4rem;
+				height: 2.4rem;
+				& path,
+				& rect {
+					fill: $color-secondary-default;
+				}
+			}
+
+			& > span {
+				color: $color-primary-dark-default;
+			}
+
+			&:hover {
+				background: $background-secondary-hover;
+
+				& > svg {
+					& path,
+					& rect {
+						fill: $color-accent-hover;
+					}
+				}
+
+				& > span {
+					color: $color-accent-hover;
+				}
+			}
+
+			&:active {
+				background: $background-secondary-pressed;
+
+				& > svg {
+					& path,
+					& rect {
+						fill: $color-accent-pressed;
+					}
+				}
+
+				& > span {
+					color: $color-accent-pressed;
+				}
+			}
+
+			&--error {
+				&:hover {
+					background: $color-system-negative-background;
+
+					& > svg {
+						& path,
+						& rect {
+							fill: $color-system-negative;
+						}
+					}
+
+					& > span {
+						color: $color-system-negative;
+					}
+				}
+
+				&:active {
+					background: $color-system-negative-hover;
+					opacity: 1;
+
+					& > svg {
+						& path,
+						& rect {
+							fill: $color-system-negative;
+						}
+					}
+
+					& > span {
+						color: $color-system-negative;
+					}
+				}
+			}
+		}
+	}
+
+	&--notification {
+		padding: 2.4rem 0;
+		width: 38rem;
+		height: auto;
+
+		& > .popup__link {
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-start;
+			gap: 1.6rem;
+
+			width: 100%;
+
+			padding: 0.8rem 2.4rem 0.8rem 2.4rem;
+
+			-webkit-tap-highlight-color: transparent;
+			-webkit-appearance: none;
+
+			& > div:first-child {
+				width: 4.4rem;
+				height: 4.4rem;
+				padding: 1rem;
+				border-radius: 50%;
+
+				& > svg {
+					width: 2.4rem;
+					height: 2.4rem;
+					& path,
+					& rect {
+						fill: $color-primary-light-default;
+					}
+				}
+			}
+
+			&:hover {
+				background: $background-secondary-hover;
+			}
+			&:active {
+				background: $background-secondary-pressed;
+			}
+
+			& > .popup__warning {
+				background: $color-system-warning;
+			}
+
+			& > .popup__info {
+				background: $color-accent-default;
+			}
+
+			& > .popup__success {
+				background: $color-system-positive;
+			}
+
+			& > .popup__content {
+				& > h5 {
+					margin-bottom: 0.4rem;
+				}
+
+				& > p {
+					color: $color-secondary-default;
+				}
+			}
+		}
+	}
+}
+
+.pass_it {
+	position: absolute;
+	right: 1.2rem;
+
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 0.4rem;
+
+	& > p {
+		color: $color-accent-default;
+	}
+
+	& > svg {
+		width: 1.6rem;
+		height: 1.6rem;
+		transform: rotate(180deg);
+		& rect,
+		& path {
+			stroke: $color-accent-default;
+		}
+	}
+}

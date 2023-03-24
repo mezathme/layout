@@ -1,0 +1,97 @@
+/* Color */
+$color-primary-dark-default: #001a40;
+$color-primary-dark-hover: #002e68;
+$color-primary-dark-pressed: #000000;
+$color-primary-dark-disabled: #bfc8cc;
+
+$color-primary-light-default: #ffffff;
+$color-primary-light-hover: #ffffff;
+$color-primary-light-pressed: #ffffff;
+$color-primary-light-disabled: #bfc8cc;
+
+$color-secondary-default: #575e71;
+$color-secondary-hover: #7d949d;
+$color-secondary-pressed: #293041;
+$color-secondary-disabled: #bfc8cc;
+
+$color-tertiary-default: #8c9ab5;
+$color-tertiary-hover: #6278a2;
+$color-tertiary-pressed: #536587;
+$color-tertiary-disabled: #bfc8cc;
+
+$color-accent-default: #3278cb;
+$color-accent-hover: #005fb0;
+$color-accent-pressed: #004787;
+$color-accent-disabled: #bfc8cc;
+
+$color-system-positive: #009c37;
+$color-system-positive-hover: linear-gradient(
+		0deg,
+		rgba(60, 193, 59, 0.5),
+		rgba(60, 193, 59, 0.5)
+	),
+	#ffffff;
+$color-system-positive-background: linear-gradient(
+		0deg,
+		rgba(255, 255, 255, 0.9),
+		rgba(255, 255, 255, 0.9)
+	),
+	#00842f;
+$color-system-negative: #ba1a1a;
+$color-system-negative-hover: linear-gradient(
+		0deg,
+		rgba(240, 55, 56, 0.5),
+		rgba(240, 55, 56, 0.5)
+	),
+	#ffffff;
+
+$color-system-negative-background: linear-gradient(
+		0deg,
+		rgba(255, 255, 255, 0.9),
+		rgba(255, 255, 255, 0.9)
+	),
+	#e11b11;
+$color-system-warning: #ffae38;
+$color-system-warning-hover: linear-gradient(
+		0deg,
+		rgba(242, 129, 35, 0.5),
+		rgba(242, 129, 35, 0.5)
+	),
+	rgba(255, 255, 255, 0.2);
+$color-system-warning-background: linear-gradient(
+		0deg,
+		rgba(255, 255, 255, 0.9),
+		rgba(255, 255, 255, 0.9)
+	),
+	#ff8a0c;
+$color-system-neytral: #e0e0e0;
+
+$background-primary-dark-default: #001a40;
+$background-primary-dark-hover: #09224a;
+$background-primary-dark-pressed: #000000;
+$background-primary-dark-disabled: #eff1f2;
+
+$background-primary-light-default: #fcfcfd;
+$background-primary-light-hover: #fcfcfd;
+$background-primary-light-pressed: #f9f9fa;
+$background-primary-light-disabled: #eff1f2;
+
+$background-secondary-default: #f0f3fb;
+$background-secondary-hover: #e9eff9;
+$background-secondary-pressed: #e1eaf6;
+$background-secondary-disabled: #eff1f2;
+
+$background-tertiary-default: #f0f0f4;
+$background-tertiary-hover: #fefbff;
+$background-tertiary-pressed: #ffffff;
+$background-tertiary-disabled: #eff1f2;
+
+$background-accent-default: #d5e3ff;
+$background-accent-hover: #a6c8ff;
+$background-accent-pressed: #73adff;
+$background-accent-disabled: #eff1f2;
+
+/* Other */
+$fontFamily: Inter;
+
+$boxShadow: 0px 0px 20px rgba(111, 111, 111, 0.3);

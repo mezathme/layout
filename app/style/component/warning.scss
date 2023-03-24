@@ -1,0 +1,64 @@
+.warning {
+	background: $color-system-warning;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2.4rem;
+
+	padding: 0.6rem 3.2rem;
+
+	height: 3rem;
+
+	@media (max-width: 599px) {
+		height: 5.7rem;
+		padding: 0.6rem 1.6rem;
+	}
+
+	&__left {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+
+		gap: 0.8rem;
+
+		& > svg {
+			width: 1.6rem;
+			height: 1.6rem;
+		}
+
+		@media (max-width: 599px) {
+			flex-direction: column;
+		}
+	}
+
+	&__content {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 1rem;
+
+		& > span {
+			color: $color-primary-light-default;
+		}
+	}
+
+	&__button {
+		color: $color-primary-light-default;
+	}
+
+	&__close {
+		width: 1.6rem;
+		height: 1.6rem;
+
+		& > svg {
+			width: 1.6rem;
+			height: 1.6rem;
+
+			& path,
+			&rect {
+				fill: $color-primary-light-default;
+			}
+		}
+	}
+}

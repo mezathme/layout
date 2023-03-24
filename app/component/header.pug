@@ -1,1 +1,116 @@
-header.header 1
+header.header
+	.header__container.container
+		a(href="#").header__logo
+			include ../assets/image/icon/logo.svg
+		
+		.header__menu
+			button.header__notification
+				include ../assets/image/icon/notification.svg
+				.popup.popup--notification.header__popup
+					a.popup__link(href="")
+						div.popup__warning
+							include ../assets/image/icon/info.svg
+						.popup__content
+							h5.text.text--sm-2 Текст уведомления
+							p.popup__date.text.text--xsm-1 24 February at 15:40
+					.divider
+					a.popup__link(href="")
+						div.popup__info
+							include ../assets/image/icon/order.svg
+						.popup__content
+							h5.text.text--sm-2 Текст уведомления
+							p.popup__date.text.text--xsm-1 24 February at 15:40
+					.divider
+					a.popup__link(href="")
+						div.popup__info
+							include ../assets/image/icon/voyage.svg
+						.popup__content
+							h5.text.text--sm-2 Текст уведомления
+							p.popup__date.text.text--xsm-1 24 February at 15:40
+					.divider
+					a.popup__link(href="")
+						div.popup__info
+							include ../assets/image/icon/menu-wallet.svg
+						.popup__content
+							h5.text.text--sm-2 Текст уведомления
+							p.popup__date.text.text--xsm-1 24 February at 15:40
+					.divider
+					a.popup__link(href="")
+						div.popup__success
+							include ../assets/image/icon/protected.svg
+						.popup__content
+							h5.text.text--sm-2 Текст уведомления
+							p.popup__date.text.text--xsm-1 24 February at 15:40
+					.divider
+					a.popup__link(href="")
+						div.popup__warning
+							include ../assets/image/icon/info.svg
+						.popup__content
+							h5.text.text--sm-2 Текст уведомления
+							p.popup__date.text.text--xsm-1 24 February at 15:40
+					.divider
+					a.popup__link(href="")
+						div.popup__info
+							include ../assets/image/icon/order.svg
+						.popup__content
+							h5.text.text--sm-2 Текст уведомления
+							p.popup__date.text.text--xsm-1 24 February at 15:40
+					.divider
+					a.popup__link(href="")
+						div.popup__info
+							include ../assets/image/icon/voyage.svg
+						.popup__content
+							h5.text.text--sm-2 Текст уведомления
+							p.popup__date.text.text--xsm-1 24 February at 15:40
+					.divider
+					a.popup__link(href="")
+						div.popup__info
+							include ../assets/image/icon/menu-wallet.svg
+						.popup__content
+							h5.text.text--sm-2 Текст уведомления
+							p.popup__date.text.text--xsm-1 24 February at 15:40
+					.divider
+					a.popup__link(href="")
+						div.popup__success
+							include ../assets/image/icon/protected.svg
+						.popup__content
+							h5.text.text--sm-2 Текст уведомления
+							p.popup__date.text.text--xsm-1 24 February at 15:40
+					.divider
+				
+					
+			button.header__profile
+				img(src='./assets/image/icon/profile.svg' alt='Profile')
+				include ../assets/image/icon/arrow.svg
+				.popup.popup--profile.header__popup
+					a.popup__link(href="#")
+						include ../assets/image/icon/person.svg
+						span.text.text--sm-1 Profile
+					a.popup__link(href="#")
+						include ../assets/image/icon/protected.svg
+						span.text.text--sm-1 Verification
+						.pass_it
+							p.text.text--xsm-1 pass
+							include ../assets/image/icon/arrow-long.svg
+					.divider
+					a.popup__link(href="#")
+						include ../assets/image/icon/order.svg
+						span.text.text--sm-1 Orders
+					a.popup__link(href="#")
+						include ../assets/image/icon/voyage.svg
+						span.text.text--sm-1 Voyages
+					a.popup__link(href="#")
+						include ../assets/image/icon/secret.svg
+						span.text.text--sm-1 Secrets
+					.divider
+					a.popup__link(href="#")
+						include ../assets/image/icon/setting.svg
+						span.text.text--sm-1 Settings
+					
+					a.popup__link(href="#")
+						include ../assets/image/icon/faq.svg
+						span.text.text--sm-1 FAQ
+					.divider
+					a.popup__link.popup__link--error(href="#")
+						include ../assets/image/icon/logout.svg
+						span.text.text--sm-1 Log out
