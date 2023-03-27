@@ -6,6 +6,81 @@ $breakpoint-lg: 1439px;
 
 /* Color */
 
+$color-primary-enabled: #001a40;
+$color-primary-hover: #002e68;
+$color-primary-pressed: #000000;
+$color-primary-disabled: #bfc8cc;
+
+$color-primary-light-enabled: #ffffff;
+$color-primary-light-hover: #ffffff;
+$color-primary-light-pressed: #ffffff;
+$color-primary-light-disabled: #bfc8cc;
+
+$color-secondary-enabled: #575e71;
+$color-secondary-hover: #7d949d;
+$color-secondary-pressed: #293041;
+$color-secondary-disabled: #bfc8cc;
+
+$color-tertiary-enabled: #8c9ab5;
+$color-tertiary-hover: #6278a2;
+$color-tertiary-pressed: #536587;
+$color-tertiary-disabled: #bfc8cc;
+
+$color-accent-enabled: #3278cb;
+$color-accent-hover: #005fb0;
+$color-accent-pressed: #004787;
+$color-accent-disabled: #bfc8cc;
+
+$color-system-positive: #009c37;
+$color-system-negative: #ba1a1a;
+$color-system-warning: #ffae38;
+$color-system-neutral: #e0e0e0;
+
+$background-primary-enabled: #001a40;
+$background-primary-hover: #09224a;
+$background-primary-pressed: #000000;
+$background-primary-disabled: #eff1f2;
+
+$background-primary-light-enabled: #fcfcfd;
+$background-primary-light-hover: #fcfcfd;
+$background-primary-light-pressed: #f9f9fa;
+$background-primary-light-disabled: #eff1f2;
+
+$background-secondary-enabled: #f0f3fb;
+$background-secondary-hover: #e9eff9;
+$background-secondary-pressed: #e1eaf6;
+$background-secondary-disabled: #eff1f2;
+
+$background-tertiary-enabled: #f0f0f4;
+$background-tertiary-hover: #fefbff;
+$background-tertiary-pressed: #ffffff;
+$background-tertiary-disabled: #eff1f2;
+
+$background-accent-enabled: #d5e3ff;
+$background-accent-hover: #a6c8ff;
+$background-accent-pressed: #73adff;
+$background-accent-disabled: #eff1f2;
+
+$background-system-positive: linear-gradient(
+		0deg,
+		rgba(255, 255, 255, 0.9),
+		rgba(255, 255, 255, 0.9)
+	),
+	#00842f;
+$background-system-negative: linear-gradient(
+		0deg,
+		rgba(255, 255, 255, 0.9),
+		rgba(255, 255, 255, 0.9)
+	),
+	#e11b11;
+$background-system-warning: linear-gradient(
+		0deg,
+		rgba(255, 255, 255, 0.9),
+		rgba(255, 255, 255, 0.9)
+	),
+	#ff8a0c;
+$background-system-neutral: #eff1f2;
+
 /* Misc */
 $px-1: 4px;
 $px-2: 8px;
