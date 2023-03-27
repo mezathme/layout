@@ -4,7 +4,7 @@ import converter from 'gulp-ttf2woff2'
 
 export const convertOTF = () => {
 	return app.gulp
-		.src(`${app.path.sourceFolder}/assets/font/*.otf`, {})
+		.src(`${app.path.sourceFolder}/assets/fonts/*.otf`, {})
 		.pipe(
 			app.plugin.plumber(
 				app.plugin.notify.onError({
@@ -23,7 +23,7 @@ export const convertOTF = () => {
 
 export const convertTTF = () => {
 	return app.gulp
-		.src(`${app.path.sourceFolder}/assets/font/*.ttf`, {})
+		.src(`${app.path.sourceFolder}/assets/fonts/*.ttf`, {})
 		.pipe(
 			app.plugin.plumber(
 				app.plugin.notify.onError({
@@ -38,13 +38,13 @@ export const convertTTF = () => {
 			})
 		)
 		.pipe(app.gulp.dest(app.path.build.font))
-		.pipe(app.gulp.src(`${app.path.sourceFolder}/assets/font/*.ttf`))
+		.pipe(app.gulp.src(`${app.path.sourceFolder}/assets/fonts/*.ttf`))
 		.pipe(converter())
 		.pipe(app.gulp.dest(app.path.build.font))
 }
 
 export const fontStyle = () => {
-	let fontsFile = `${app.path.sourceFolder}/style/misc/font.scss`
+	let fontsFile = `${app.path.sourceFolder}/assets/styles/misc/font.scss`
 
 	files.readdir(app.path.build.font, function (err, fontsFiles) {
 		if (fontsFiles) {
@@ -85,14 +85,16 @@ export const fontStyle = () => {
 						}
 						files.appendFile(
 							fontsFile,
-							`@font-face{\n\tfont-family: ${fontName};\n\tfont-display: swap;\n\tsrc: url("../fonts/${fontFileName}.woff2") format("woff2"), url("../fonts/${fontFileName}.woff") format("woff");\n\tfont-weight: ${fontWeight};\n\tfont-style: normal;\n}\r\n`,
+							`@font-face{\n\tfont-family: ${fontName};\n\tfont-display: swap;\n\tsrc: url("../assets/fonts/${fontFileName}.woff2") format("woff2"), url("../assets/fonts/${fontFileName}.woff") format("woff");\n\tfont-weight: ${fontWeight};\n\tfont-style: normal;\n}\r\n`,
 							cb
 						)
 						newFileOnly = fontFileName
 					}
 				}
 			} else {
-				console.log("Delete 'style/misc/font.scss, before refresh file'")
+				console.log(
+					"Delete 'assets/styles/misc/font.scss, before refresh file'"
+				)
 			}
 		}
 	})
