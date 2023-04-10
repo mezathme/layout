@@ -6,10 +6,12 @@ html(lang="en")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		link(rel="stylesheet", href="style/app.min.css")
 		title Document
-	body 
+	body
 		.wrapper
-			include components/header.pug
-			main.main 1
-			include components/footer.pug	
+			include component/header.pug
+			.wrapper__container
+				aside.aside 1
+				main.main 1
+			
 		
 		script(src='./script/app.js')
